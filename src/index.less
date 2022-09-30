@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  padding-top: 12px;
+
+  &__left {
+    flex: 0 0 40%;
+
+    .row {
+      margin-bottom: 12px;
+    }
+
+    .label {
+      line-height: 32px;
+      text-align: right;
+    }
+
+    .radio-group  {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__right {
+    flex: 0 0 60%;
+    position: relative;
+
+    .radio-group {
+      width: max-content;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    #chart {
+      position: relative;
+      top: 32px;
+      height: calc(100vh - 32px - 12px)
+    }
+  }
+}
+
+
